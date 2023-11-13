@@ -6,6 +6,7 @@ import * as SecureStore from 'expo-secure-store';
 import BadgerChatroomScreen from './screens/BadgerChatroomScreen';
 import BadgerRegisterScreen from './screens/BadgerRegisterScreen';
 import BadgerLoginScreen from './screens/BadgerLoginScreen';
+import BadgerLandingScreen from './screens/BadgerLandingScreen';
 
 
 const ChatDrawer = createDrawerNavigator();

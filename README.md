@@ -50,9 +50,9 @@ The user should be able to switch back and forth between the login and registrat
 
 **Passwords should be masked with stars**, see the [TextInput documentation](https://reactnative.dev/docs/textinput).
 
-### 2. Display Chatrooms
+### 2. Display Chatrooms and Messages
 
-After the user has successfully logged in, they should be routed to a landing page. On this landing page, the user should be able to access a drawer that will allow them to navigate to the different chatrooms of BadgerChat. Each chatroom should display the messages for that chatroom. You will paginate this in the next step.
+After the user has successfully logged in, they should be routed to a landing page. On this landing page, the user should be able to access a drawer that will allow them to navigate to the different chatrooms of BadgerChat. Each chatroom should display the messages for that chatroom, including the message's title, author, content, and posting date (**hint:** a component `BadgerChatMessage.jsx` has already been created for you). You will paginate this in the next step.
 
 **You must use React Navigation for this requirement.**
 
