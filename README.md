@@ -50,11 +50,15 @@ The user should be able to switch back and forth between the login and registrat
 
 **Passwords should be masked with stars**, see the [TextInput documentation](https://reactnative.dev/docs/textinput).
 
+![](_figures/step1.png)
+
 ### 2. Display Chatrooms and Messages
 
 After the user has successfully logged in, they should be routed to a landing page. On this landing page, the user should be able to access a drawer that will allow them to navigate to the different chatrooms of BadgerChat. Each chatroom should display the messages for that chatroom, including the message's title, author, content, and posting date (**hint:** a component `BadgerChatMessage.jsx` has already been created for you). You will paginate this in the next step.
 
 **You must use React Navigation for this requirement.**
+
+![](_figures/step2.png)
 
 ### 3. Paginate Chat Messages
 
@@ -62,7 +66,9 @@ In addition, the user should be able to switch between pages in a chatroom. Ther
 
 You must show the user what page they are on at all times.
 
-**Optional:** You may choose to handle this [via gestures](https://docs.swmansion.com/react-native-gesture-handler/docs/) (e.g. swiping left and right), though this is not a requirement.
+**Optional:** You may choose to handle this [via gestures](https://docs.swmansion.com/react-native-gesture-handler/docs/) (e.g. swiping left and right) instead, though this is not a requirement.
+
+![](_figures/step3.png)
 
 ### 4. Create a Post
 
@@ -72,11 +78,15 @@ Upon posting, the user should see an `Alert` notifying them that their post was 
 
 **Remember:** Because the phone is not a browser, we no longer use cookies! Instead, we must manually specify the header `Authorization: Bearer <JWT>` where `<JWT>` is the token that was stored using `expo-secure-store`.
 
+![](_figures/step4.png)
+
 ### 5. Delete a Post
 
 Add the option for a user to delete *their own* posts. A red "Delete" button should be shown for each post that a user owns (but not for others' posts).
 
 Upon deleting a post, the user should see an `Alert` notifying them that their post was deleted as well as the *updated* message board, reverting back to the first page.
+
+![](_figures/step5.png)
 
 ### 6. Logout
 
@@ -84,10 +94,13 @@ Add a navigation screen to the drawer for the user to logout. Upon logout, the J
 
 **Note:** In this API, because we are no longer using cookies, there is not a logout endpoint. You just need to remove the JWT from the secure store on your device.
 
+![](_figures/step6.png)
+
 ### 7. Anonymous Access
 
 BadgerChat is a public forum, so users should be able to view posts without an account. Add a "Continue As Guest" option to the login screen. When continuing as guest, the user should be able to view posts, but not add a post. Furthermore, instead of logging the user out, re-route them **to the signup screen** -- we will try to [convert our guest into a user](https://seodigitalgroup.com/what-is-a-conversion/).
 
+![](_figures/step7.png)
 
 ### Other Notes
 You should now be able to interact with BadgerChat through both your phone and the web! 🥳
